@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">WishHook</string>
+    <string name="username">Username</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+    <string name="username_or_email_address">Username or email address</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forgot_the_password">Forgot the password?</string>
+    <string name="log_in">Log in</string>
 </resources>
