@@ -6,6 +6,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 28
+
     defaultConfig {
         applicationId "com.thesupreme.wishhook"
         minSdkVersion 24
@@ -20,6 +21,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    android.defaultConfig.vectorDrawables.useSupportLibrary = true
 }
 
 dependencies {
@@ -31,4 +37,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation-ui:0.26.0'
+    implementation('com.mapbox.mapboxsdk:mapbox-android-sdk:6.8.1') {
+        exclude group: 'group_name', module: 'module_name'
+    }
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
 }
